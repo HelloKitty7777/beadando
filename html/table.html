@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Űrlap</title>
+  <link rel="stylesheet" href="../css/style.css">
+  <script defer src="../js/formValidator.js"></script>
+</head>
+
+<body>
+  <header>
+    <h1>Űrlap</h1>
+  </header>
+
+  <nav class="menu">
+    <a href="index.html">Kezdőlap</a>
+    <a href="tabla2.html">Táblázat</a>
+    <a href="sanrio.html">Sanrio</a>
+    <a href="hellokitty.html">Hello Kitty</a>
+    <a href="table.html">Űrlap</a>
+</nav>
+
+  <aside>
+    <p>Űrlap validálás JavaScript segítségével</p>
+  </aside>
+
+  <div class="content">
+    <h2>Töltsd ki az űrlapot</h2>
+
+    <form id="form">
+      <input type="text" id="name" placeholder="Név" required minlength="10">
+      <input type="number" id="age" placeholder="Kor" required min="0" max="120">
+      <input type="text" id="city" placeholder="Város" required minlength="10">
+      <input type="text" id="job" placeholder="Foglalkozás" required minlength="10">
+      <input type="email" id="email" placeholder="Email" required>
+      <button type="submit">Elküld</button>
+    </form>
+
+    <div id="error" style="color:red; margin-top:10px;"></div>
+  </div>
+
+  <footer>
+    <p>Készítette: Győri Kitti - ZUBQR0</p>
+  </footer>
+</body>
+
+</html>
