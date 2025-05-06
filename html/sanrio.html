@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web-programozás-1</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+    <header>
+        <h1>🎀 Hello Kitty island adventure 🎀</h1>
+    </header>
+
+    <nav class="menu">
+        <a href="index.html">Kezdőlap</a>
+        <a href="tabla2.html">Táblázat</a>
+        <a href="sanrio.html">Sanrio</a>
+        <a href="hellokitty.html">Hello Kitty</a>
+        <a href="table.html">Űrlap</a>
+    </nav>
+
+
+    <main class="main-container">
+        <aside>
+            <h3>🎀 Sanrio érdekességek:</h3>
+            <p id="randomFact">Betöltés...</p>
+        </aside>
+
+        <div class="content">
+            <section class="fact-block">
+                <div class="text">
+                    <h2>🎮 A játék világa:</h2>
+                    <p>A Hello Kitty Island Adventure egy élet-szimulációs kalandjáték, ahol a játékosok felfedezhetik a
+                        varázslatos szigetet Sanrio karakterekkel együtt.</p>
+                </div>
+                <img src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2495100/header.jpg?t=1738357302"
+                    alt="Island Adventure" width="200">
+            </section>
+
+            <section class="fact-block">
+                <div class="text">
+                    <h2>🎈 Több mint csak Hello Kitty:</h2>
+                    <p>A játékban nemcsak Hello Kitty, hanem My Melody, Kuromi, Cinnamoroll és sok más Sanrio karakter
+                        is szerepel, saját küldetésekkel és barátságokkal.</p>
+                </div>
+                <img src="https://www.konzolvilag.hu/gallery/switch/hello-kitty-island-adventure-deluxe-edition/switch-switch-2_thumb320.jpg"
+                    alt="Sanrio characters" width="200">
+            </section>
+
+            <section class="fact-block">
+                <div class="text">
+                    <h2>⛺ Bázisépítés és főzés:</h2>
+                    <p>A játékosok főzhetnek, berendezhetik saját kabinjukat és fejleszthetik a szigetet, miközben
+                        ajándékokat adnak barátaiknak.</p>
+                </div>
+                <img src="https://www.gematsu.com/wp-content/uploads/2025/01/Hello-Kitty-Island-Adventure_01-07-25-768x432.jpg" alt="Bázisépítés"
+                    width="200">
+            </section>
+
+            <section class="fact-block">
+                <div class="text">
+                    <h2>🌈 Barátság szint növelés:</h2>
+                    <p>Minden karakterrel lehetőség van a kapcsolat mélyítésére. A szintek növelése új párbeszédeket és
+                        jutalmakat nyit meg.</p>
+                </div>
+                <img src="https://www.gameshub.com/wp-content/uploads/sites/5/2024/02/hello-kitty-island-adventure-update.jpg"
+                    alt="Barátság" width="200">
+            </section>
+
+            <section class="fact-block">
+                <div class="text">
+                    <h2>🏝️ Kizárólag Apple Arcade-en:</h2>
+                    <p>A játék jelenleg Apple Arcade exkluzív, iPhone, iPad és Mac eszközökön játszható, reklámmentesen
+                        és mikrotranzakciók nélkül.</p>
+                </div>
+
+                <img src="https://mlpnk72yciwc.i.optimole.com/cqhiHLc.IIZS~2ef73/w:auto/h:auto/q:75/https://bleedingcool.com/wp-content/uploads/2024/09/Hello-Kitty-Island-Adventure-Spooky-Celebration.jpg"
+                    alt="Apple Arcade" width="200">
+            </section>
+        </div>
+
+
+    </main>
+
+    <footer>
+        <p>Készítette: Győri Kitti - ZUBQR0</p>
+    </footer>
+
+
+    <script>
+        const sanrioFacts = [
+            "1974-ben jelent meg Hello Kitty.",
+            "Sanrio több száz karaktert hozott létre az évtizedek során – például My Melody, Cinnamoroll, Badtz-Maru, Kuromi, Keroppi",
+            "A cég mottója: „Small Gift, Big Smile”, azaz „Kis ajándék, nagy mosoly”. ",
+            "A Sanrio Puroland Tokióban található.",
+            "2013-ban indult a Sanrio Character Ranking",
+            "Bár elsőre gyerekeknek tűnik, Sanrio karakterei hatalmas rajongótáborral rendelkeznek felnőttek körében is.",
+        ];
+
+        document.getElementById("randomFact").textContent =
+            sanrioFacts[Math.floor(Math.random() * sanrioFacts.length)];
+    </script>
+
+
+</body>
+
+</html>
