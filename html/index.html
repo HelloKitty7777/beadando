@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Web-programozás-1</title>
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+  <header>
+    <h1>🎀 Web-programozás gyakorlat 🎀</h1>
+  </header>
+
+  <nav class="menu">
+    <a href="index.html">Kezdőlap</a>
+    <a href="table.html">Táblázat</a>
+    <a href="sanrio.html">Sanrio</a>
+    <a href="hellokitty.html">Hello Kitty</a>
+    <a href="table.html">Űrlap</a>
+  </nav>
+  
+
+  <main class="main-container">
+    <aside>
+   <h3>Érdekesség</h3>
+   <p id="randomFact">Betöltés...</p>
+ </aside>
+ 
+     <div class="content">
+       <section>
+         <h2>Fedezd fel a webes technológiákat!</h2>
+         <p>Ez a weboldal különböző funkciókat mutat be, mint például HTML5 elemek, táblázatok, interaktív chartok, AJAX használat és objektumorientált JavaScript.</p>
+       </section>
+       <section>
+         <h2>Tanulj játékosan és gyakorlatiasan</h2>
+         <p>Minden menüpont egy-egy webes technológia szemléltetésére szolgál, kódpéldákkal és működő funkciókkal. Kattints a fenti menüben a téged érdeklő részre!</p>
+       </section>
+     </div>
+   </main>
+ 
+   <footer>
+     <p>Készítette: Győri Kitti - ZUBQR0</p>
+   </footer>
+ 
+ 
+   <script>
+     const facts = [
+       "A HTML-t 1993-ban szabványosították először.",
+       "A JavaScriptet 10 nap alatt fejlesztették ki.",
+       "A CSS-ben a színek hexadecimálisan is megadhatók.",
+       "Az első weboldal a CERN-nél futott.",
+       "A favicon egy 16x16 képpont méretű kis ikon.",
+       "A JavaScript nem ugyanaz, mint a Java!",
+       "A responsive design segít, hogy mobilon is jól nézzen ki az oldal.",
+       "Az animációk CSS-sel is megvalósíthatók.",
+       "A legelső weboldal még mindig elérhető online.",
+       "A modern böngészők automatikusan értelmezik a HTML5-öt."
+     ];
+   
+     document.getElementById("randomFact").textContent =
+       facts[Math.floor(Math.random() * facts.length)];
+   </script>
+ 
+ 
+ </body>
+ </html>
