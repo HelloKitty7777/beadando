@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Web-programozás-1</title>
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+  <header>
+    <h1>🎀 Hello Kitty page 🎀</h1>
+  </header>
+
+  <nav class="menu">
+    <a href="index.html">Kezdőlap</a>
+    <a href="table.html">Táblázat</a>
+    <a href="sanrio.html">Sanrio</a>
+    <a href="hellokitty.html">Hello Kitty</a>
+    <a href="table.html">Űrlap</a>
+  </nav>
+  
+
+  <main class="main-container">
+    <aside>
+   <h3>🎀 Sanrio érdekességek:</h3>
+   <p id="randomFact">Betöltés...</p>
+ </aside>
+ 
+    <div class="content">
+        <section class="fact-block">
+            <h2>🎀 Érdekességek Hello Kitty-ről</h2>
+            <p>Nem macska, hanem kislány: Bár Hello Kitty megjelenése macskaszerű, valójában egy brit kislány, Kitty White
+                néven. Sanrio szerint ő egy harmadikos tanuló, aki London külvárosában él családjával. </p>
+            <img src="https://m.media-amazon.com/images/I/713n2Lb7y6L._AC_UF894%2C1000_QL80_.jpg" alt="Hello Kitty" width="200">
+        </section>
+        <section class="fact-block">
+            <h2>Születése és első megjelenése: </h2>
+            <p>Hello Kitty-t 1974-ben alkotta meg Yuko Shimizu, és először egy pénztárcán jelent meg 1975-ben.</p>
+            <img src="https://i.pinimg.com/736x/4d/fa/bd/4dfabd569867dc502c522fba9550c6a6.jpg" alt="Hello Kitty" width="200">
+
+        </section>
+        <section class="fact-block">
+            <h2>Ikertestvére van: </h2>
+            <p>Hello Kitty-nek van egy ikertestvére, Mimmy, aki sárga masnit visel a jobb fülén, míg Hello Kitty piros masnit a bal fülén.</p>
+            <img src="https://kawaiicostore.com/cdn/shop/articles/Screenshot_2023-08-31_at_11.05.19_AM.png?v=1693499950&width=1100" alt="Hello Kitty" width="200">
+
+        </section>
+        <section class="fact-block">
+            <h2>Kedvenc étele az almás pite: </h2>
+            <p>Hello Kitty imádja az édesanyja által készített almás pitét, és szabadidejében szeret sütni.</p>
+            <img src="https://lucybalu.com/cdn/shop/files/HK-50th_Anniversery_transparent_hochformat_600x.png?v=1741102988" alt="Hello Kitty" width="200">
+
+        </section>
+        <section class="fact-block">
+            <h2>Világszerte ismert márka: </h2>
+            <p>Hello Kitty több mint 50 000 terméken szerepel, és évente több milliárd dolláros bevételt generál világszerte.</p>
+            <img src="https://d2ur3228349jyd.cloudfront.net/assets/img/characters/mv/hellokitty.png" alt="Hello Kitty" width="200">
+
+        </section>
+    </div>
+   </main>
+ 
+   <footer>
+     <p>Készítette: Győri Kitti - ZUBQR0</p>
+   </footer>
+ 
+   <script>
+    const sanrioFacts = [
+        "1974-ben jelent meg Hello Kitty.",
+        "Sanrio több száz karaktert hozott létre az évtizedek során például My Melody, Cinnamoroll, Badtz-Maru, Kuromi, Keroppi",
+        "A cég mottója: „Small Gift, Big Smile”, azaz „Kis ajándék, nagy mosoly”. ",
+        "A Sanrio Puroland Tokióban található.",
+        "2013-ban indult a Sanrio Character Ranking",
+        "Bár elsőre gyerekeknek tűnik, Sanrio karakterei hatalmas rajongótáborral rendelkeznek felnőttek körében is.",
+    ];
+
+    document.getElementById("randomFact").textContent =
+        sanrioFacts[Math.floor(Math.random() * sanrioFacts.length)];
+</script>
+
+ </body>
+ </html>
